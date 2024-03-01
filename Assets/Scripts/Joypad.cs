@@ -22,37 +22,37 @@ public class Joypad : MonoBehaviour
         if (CompareTag("Up"))
         {
             // Debug.Log("Get Up");
-            Vector2 padPosition = gameManager.GetTopPadPositon();
+            /*Vector2 padPosition = gameManager.GetTopPadPositon();
             Vector3 position = new Vector3(padPosition.x, padPosition.y, 0);
             transform.position = position;
             Vector2 localPosition = transform.localPosition;
-            transform.localPosition = new Vector3(localPosition.x, localPosition.y, 0);
+            transform.localPosition = new Vector3(localPosition.x, localPosition.y, 0);*/
         }
         else if (CompareTag("Down"))
         {
-            Vector2 padPosition = gameManager.GetBottomPadPositon();
+           /* Vector2 padPosition = gameManager.GetBottomPadPositon();
             Vector3 position = new Vector3(padPosition.x, padPosition.y, 0);
             transform.position = position;
             Vector2 localPosition = transform.localPosition;
-            transform.localPosition = new Vector3(localPosition.x, localPosition.y, 0);
+            transform.localPosition = new Vector3(localPosition.x, localPosition.y, 0);*/
         }
         else if (CompareTag("Left"))
         {
-            Vector2 padPosition = gameManager.GetLeftPadPositon();
+            /*Vector2 padPosition = gameManager.GetLeftPadPositon();
             Vector3 position = new Vector3(padPosition.x, padPosition.y, 0);
             transform.position = position;
             Vector2 localPosition = transform.localPosition;
-            transform.localPosition = new Vector3(localPosition.x, localPosition.y, 0);
+            transform.localPosition = new Vector3(localPosition.x, localPosition.y, 0);*/
 
         }
 
         else if (CompareTag("Right"))
         {
-            Vector2 padPosition = gameManager.GetRightPadPositon();
+            /*Vector2 padPosition = gameManager.GetRightPadPositon();
             Vector3 position = new Vector3(padPosition.x, padPosition.y, 0);
             transform.position = position;
             Vector2 localPosition = transform.localPosition;
-            transform.localPosition = new Vector3(localPosition.x, localPosition.y, 0);
+            transform.localPosition = new Vector3(localPosition.x, localPosition.y, 0);*/
         }
         
 
