@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SelectControl : MonoBehaviour
 {
-    GameManager gameManager;
+    SnakeManager gameManager;
     // Start is called before the first frame update
     void Start()
     {

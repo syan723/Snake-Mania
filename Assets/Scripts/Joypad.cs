@@ -6,7 +6,7 @@ public class Joypad : MonoBehaviour
 {
     Snake snake;
 
-    GameManager gameManager;
+    SnakeManager gameManager;
 
     // Start is called before the first frame update
     void Start()
@@ -17,7 +17,7 @@ public class Joypad : MonoBehaviour
             // Debug.LogError("NO SNAKE COMPONENT FOUND");
         }
 
-        gameManager = FindObjectOfType<GameManager>();
+        gameManager = FindObjectOfType<SnakeManager>();
         
         if (CompareTag("Up"))
         {

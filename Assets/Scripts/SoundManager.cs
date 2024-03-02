@@ -10,12 +10,12 @@ public class SoundManager : MonoBehaviour
     [SerializeField] AudioClip chainSound;
 
     AudioSource audioSource;
-    GameManager gameManager;
+    SnakeManager gameManager;
     
     private void Start() 
     {
         audioSource = GetComponent<AudioSource>();
-        gameManager = FindObjectOfType<GameManager>();
+        gameManager = FindObjectOfType<SnakeManager>();
     }
     
     public void PlayClickSound()

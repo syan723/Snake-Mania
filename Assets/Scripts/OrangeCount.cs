@@ -6,11 +6,11 @@ using TMPro;
 public class OrangeCount : MonoBehaviour
 {
 
-    GameManager gameManager;
+    SnakeManager gameManager;
     // Start is called before the first frame update
     void Start()
     {
-        gameManager = FindObjectOfType<GameManager>();
+        gameManager = FindObjectOfType<SnakeManager>();
         if(!gameManager)
         {
             Debug.Log("NO GAME MANAGER FOUND");

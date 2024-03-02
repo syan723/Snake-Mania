@@ -222,7 +222,7 @@ public class SceneLoader : MonoBehaviour
     public void LoadJoypadScene()
     {
         FindObjectOfType<SoundManager>().PlayClickSound();
-        GameManager gameManager = FindObjectOfType<GameManager>();
+        SnakeManager gameManager = FindObjectOfType<SnakeManager>();
         gameManager.SetChangeDpadPosition(true);
         SceneManager.LoadScene("Joypad Scene");
 

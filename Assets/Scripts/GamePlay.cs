@@ -33,7 +33,7 @@ public class GamePlay : MonoBehaviour
 
         sceneLoader = FindObjectOfType<SceneLoader>();
 
-        soundOn = FindObjectOfType<GameManager>().IsSoundOn();
+        soundOn = FindObjectOfType<SnakeManager>().IsSoundOn();
     }
 
 
@@ -76,7 +76,7 @@ public class GamePlay : MonoBehaviour
     private void OnDestroy() 
     {
         if(soundOn)
-            playThemeSong.StartSong();
+           playThemeSong.StartSong();
     }
 
 }

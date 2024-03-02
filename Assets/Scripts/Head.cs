@@ -80,7 +80,7 @@ public class Head : MonoBehaviour
         else // Head collided with snake body part or walls
         { // Game Over
 
-            GameManager gameManager = FindObjectOfType<GameManager>();
+            SnakeManager gameManager = FindObjectOfType<SnakeManager>();
             // update total points and save
             gameManager.AddPoints(score.getScore());
             gameManager.SetCurrentScore(score.getScore());

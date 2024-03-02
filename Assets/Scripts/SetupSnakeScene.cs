@@ -93,7 +93,7 @@ public class SetupSnakeScene : MonoBehaviour, IDataPersistence
         // reduce points
         totalPoints -= GetSnakeCost();
 
-        FindObjectOfType<GameManager>().AddPoints(-GetSnakeCost());
+        FindObjectOfType<SnakeManager>().AddPoints(-GetSnakeCost());
     }
 
     /// <summary>

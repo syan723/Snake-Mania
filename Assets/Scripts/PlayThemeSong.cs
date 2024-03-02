@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayThemeSong : MonoBehaviour
 {
-    GameManager gameManager;
+    SnakeManager gameManager;
 
     private void Awake() 
     {
@@ -23,7 +23,7 @@ public class PlayThemeSong : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gameManager = FindObjectOfType<GameManager>();
+        gameManager = FindObjectOfType<SnakeManager>();
 
         if(gameManager.IsSoundOn())
         {

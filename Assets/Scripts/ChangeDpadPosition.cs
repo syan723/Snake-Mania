@@ -6,7 +6,7 @@ public class ChangeDpadPosition : MonoBehaviour
 {
     [SerializeField] float borderOffset = 1f;
 
-    GameManager gameManager;
+    SnakeManager gameManager;
     DpadBorder[] dpadBorders;
 
     Vector2 dpadTopBorder;
@@ -22,7 +22,7 @@ public class ChangeDpadPosition : MonoBehaviour
 
     private void Start() 
     {
-        gameManager = FindObjectOfType<GameManager>();
+        gameManager = FindObjectOfType<SnakeManager>();
         if(!gameManager){
             Debug.LogError("NO GAME MANAGER COMPONENT FOUND");
         }
@@ -64,7 +64,7 @@ public class ChangeDpadPosition : MonoBehaviour
 
     private void OnMouseDown() 
     {
-        GameManager gameManager = FindObjectOfType<GameManager>();
+        SnakeManager gameManager = FindObjectOfType<SnakeManager>();
 
         if(gameManager.GetChangeDpadPosition())
         {   // Change the position of the D-Pad Button

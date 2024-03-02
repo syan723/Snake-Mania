@@ -46,7 +46,7 @@ public class Snake : MonoBehaviour
     int foodCounter = 0;
 
     GamePlay gamePlay;
-    GameManager gameManager;
+    SnakeManager gameManager;
 
     SnakeTypes snakeTypes;
 
@@ -55,7 +55,7 @@ public class Snake : MonoBehaviour
         // For storing snake parts
         snake = new List<GameObject>();
 
-        gameManager = FindObjectOfType<GameManager>();
+        gameManager = FindObjectOfType<SnakeManager>();
         if (!gameManager)
             Debug.LogError("NO GAME MANAGER FOUND");
 

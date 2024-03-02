@@ -7,14 +7,14 @@ using TMPro;
 public class GameOver : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI pointsText;
-    GameManager gameManager;
+    SnakeManager gameManager;
 
     int previousSceneIndex;
 
     // Start is called before the first frame update
     void Start()
     {
-        gameManager = FindObjectOfType<GameManager>();
+        gameManager = FindObjectOfType<SnakeManager>();
 
         if(!gameManager)
             Debug.LogError("NO GAME MANAGER!!");

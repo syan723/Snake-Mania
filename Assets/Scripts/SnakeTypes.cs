@@ -26,10 +26,10 @@ public class SnakeTypes : MonoBehaviour, IDataPersistence
 
     SnakeType snakeType;
 
-    GameManager gameManager;
+    SnakeManager gameManager;
 
     private void Awake() {
-        gameManager = FindObjectOfType<GameManager>();
+        gameManager = FindObjectOfType<SnakeManager>();
 
         if(!gameManager)
             Debug.LogError("NO GAME MANAGER FOUND");

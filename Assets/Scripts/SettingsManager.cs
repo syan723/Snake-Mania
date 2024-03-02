@@ -12,7 +12,7 @@ public class SettingsManager : MonoBehaviour
     [SerializeField] Button customizeButton;
 
     Toggle toggle;
-    GameManager gameManager;
+    SnakeManager gameManager;
 
     Button button;
 
@@ -36,7 +36,7 @@ public class SettingsManager : MonoBehaviour
         // if(!toggle)
         //     Debug.Log("NO TOGGLE FOUND");
 
-        gameManager = FindObjectOfType<GameManager>();
+        gameManager = FindObjectOfType<SnakeManager>();
 
         if(!gameManager)
             Debug.Log("NO GAME MANAGER FOUND");
@@ -91,7 +91,7 @@ public class SettingsManager : MonoBehaviour
     }
     public void SaveJoyPadPosition()
     {
-        GameManager gameManager = FindObjectOfType<GameManager>();
+        SnakeManager gameManager = FindObjectOfType<SnakeManager>();
         gameManager.SetChangeDpadPosition(false);
 
         Joypad[] joypads = FindObjectsOfType<Joypad>();
@@ -126,7 +126,7 @@ public class SettingsManager : MonoBehaviour
     public void ResetJoyPadPositions()
     {
         FindObjectOfType<SoundManager>().PlayClickSound();
-        GameManager gameManager = FindObjectOfType<GameManager>();
+        SnakeManager gameManager = FindObjectOfType<SnakeManager>();
         gameManager.ResetPadPositions();
         gameManager.SetChangeDpadPosition(false);
 

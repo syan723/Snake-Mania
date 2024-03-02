@@ -52,7 +52,7 @@ public class SetupMazeScene : MonoBehaviour, IDataPersistence
 
         totalPoints -= GetMazeCost();
 
-        FindObjectOfType<GameManager>().AddPoints(-GetMazeCost());
+        FindObjectOfType<SnakeManager>().AddPoints(-GetMazeCost());
     }
 
     /// <summary>

@@ -22,7 +22,7 @@ public class SpawnFood : MonoBehaviour
 
     SnakeAbilities snakeAbilities;
 
-    GameManager gameManager;
+    SnakeManager gameManager;
 
     // Start is called before the first frame update
     void Start()
@@ -33,7 +33,7 @@ public class SpawnFood : MonoBehaviour
             Debug.Log("NO SNAKE ABILITY FOUND");
         }
 
-        gameManager = FindObjectOfType<GameManager>();
+        gameManager = FindObjectOfType<SnakeManager>();
         if(!gameManager)
         {
             Debug.Log("NO GAME MANAGER FOUND");
