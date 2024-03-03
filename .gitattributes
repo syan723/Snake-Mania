@@ -1,0 +1,4 @@
+Assets/newUi filter=lfs diff=lfs merge=lfs -text
+Assets/New[[:space:]]Ui/button filter=lfs diff=lfs merge=lfs -text
+Assets/New[[:space:]]Ui/button.psd filter=lfs diff=lfs merge=lfs -text
+Assets/New[[:space:]]Ui/Button.psd filter=lfs diff=lfs merge=lfs -text
